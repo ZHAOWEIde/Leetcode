@@ -1,0 +1,8 @@
+﻿  classDefine.cpp
+D:\Workspace\LeetCode\Leetcode\wangyi\2020shcoolwangyihuyu\Project1\Project1\classDefine.cpp(100,27): warning C4018: “<”: 有符号/无符号不匹配
+D:\Workspace\LeetCode\Leetcode\wangyi\2020shcoolwangyihuyu\Project1\Project1\classDefine.cpp(108,19): warning C4018: “<”: 有符号/无符号不匹配
+D:\Workspace\LeetCode\Leetcode\wangyi\2020shcoolwangyihuyu\Project1\Project1\classDefine.cpp(111,60): warning C4018: “>”: 有符号/无符号不匹配
+D:\Workspace\LeetCode\Leetcode\wangyi\2020shcoolwangyihuyu\Project1\Project1\classDefine.cpp(123,15): warning C4018: “<=”: 有符号/无符号不匹配
+D:\Workspace\LeetCode\Leetcode\wangyi\2020shcoolwangyihuyu\Project1\Project1\classDefine.cpp(130,65): warning C4018: “<”: 有符号/无符号不匹配
+D:\Workspace\LeetCode\Leetcode\wangyi\2020shcoolwangyihuyu\Project1\Project1\classDefine.cpp(68): warning C4172: 返回局部变量或临时变量的地址: result
+  Project1.vcxproj -> D:\Workspace\LeetCode\Leetcode\wangyi\2020shcoolwangyihuyu\Project1\Debug\Project1.exe
