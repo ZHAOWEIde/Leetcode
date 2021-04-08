@@ -4,6 +4,9 @@
 #include <vector>
 #include <map>
 #include <set>
+#include <math.h>
+#include <algorithm>
+#include <string>
 
 using namespace std;
 
@@ -41,11 +44,21 @@ public:
 	vector<int> eg = { 1,3,5,6,7,8,9 };
 	int proc1(vector<int> const& arrayList);
 
-	//题目2
-
-	
+	//题目2	
 };
 
+class WYHY{
+
+
+public:
+	//https://www.nowcoder.com/questionTerminal/8ff3e3a14ea04c6bb3a60e2e457dafb1?orderByHotValue=0&mutiTagIds=1063&page=1&onlyReference=false
+	//糖果 2018年
+	vector<int> eg_proc1 = { 0,0,0,0};
+	int candy(vector<int> & arrayList);
+
+	//奇怪的信
+	pair<int, int> processLetter(vector<int> const&defineWidth, string& letter);
+};
 
 
 

@@ -141,3 +141,69 @@ int Microsoft2021WJR::proc1(vector<int> const& arrayList)
 	}
 	return result;
 }
+
+
+int WYHY::candy(vector<int> & arrayList) {
+	sort(arrayList.begin(), arrayList.end());
+	int num = 0;
+	bool same = false;
+	int len = arrayList.size();
+	int next = 0;
+	int i = 0;
+	while (i < len && arrayList[i] == 0  ) {
+		i++;
+		num += 1;
+	}
+	while (i < len) {
+		
+		if (i + arrayList[i] < len) {
+			next = arrayList[i + arrayList[i]];
+			if (next == arrayList[i]) {
+				num += arrayList[i] + 1;
+				i = next + 1;
+			}
+			else {
+				int k = i + 1;
+				while (k <= next) {
+					if (arrayList[k] != arrayList[i]) {
+						num += arrayList[i] + 1;
+						i = k;
+						break;
+					}
+					k++;
+				}
+
+			}
+		}
+		else {
+			int k = i + 1;
+			while (k <= len) {
+				if (k == len || arrayList[k] != arrayList[i] ) {
+					num += arrayList[i] + 1;
+					i = k;
+				}
+				k++;
+			}
+		}
+	}
+	return num;
+}
+
+pair<int, int> WYHY::processLetter(vector<int> const&defineWidth, string& letter)
+{
+	int row = 1;
+	int lastRowWidth = 0;
+	int nowWidth = 0;
+	string::iterator iter;
+	for (iter = letter.begin();iter != letter.end();iter++) {
+		if (nowWidth + defineWidth[*iter - 'a'] <= 100) {
+			nowWidth += defineWidth[*iter - 'a'];
+		}
+		else {
+			row += 1;
+			nowWidth = defineWidth[*iter - 'a'];
+		}
+	}
+	pair<int, int> result = make_pair(row, nowWidth);
+	return result;
+}
